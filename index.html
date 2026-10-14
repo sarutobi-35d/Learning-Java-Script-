@@ -10,23 +10,16 @@
 
     <script>
 
-        const  a = 'Salut';
-        const b = 'les gens';
+        const age = prompt("Quel est votre age ?");
+        const nom = prompt("Quel est votre nom ?")
 
-        const isMajeur = null;
-
-        const notes = [10, 14, 9, 'hello', [1, 98, 7]];
-
-        const person = {
-            nom: "Fadil", 
-            prenom: "Scarlet",
-            age: 24,
-            notes: [12, 14, 17],
-            metier: {
-                name: "Informaticien",
-                heures: 10
-            }
-        };
+        if(age > 18){
+            console.log("Nous vous recommandons Evil Man " + nom);
+        } else if(age <= 18){
+            console.log("Nous vous recommandons Superman " + nom);
+        } else{
+            console.log("Nous vous recommandons Matrix " + nom);
+        }
 
     </script>
     
