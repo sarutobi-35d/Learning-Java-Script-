@@ -29,3 +29,14 @@ NB: En JavaScript, tous les types de variable sont des objets.
     
     * switch case permet de verifier une variable à différente valeur.
     *prompt est une instruction d'écriture.
+
+
+3. LA PORTÉE DES VARIABLES:
+    Elles ne sont que accéssible dans la condition, boucle ou fonction dans laquelle elle est declaré. Sauf si le type est
+    du type var... D'ou une raison de moins utilisé le type var.
+
+
+4. LES BOUCLES:
+    Permettent de repeter un morceau de code un certains nombre de fois en fonction de conditions.
+        for of... Pour les objets itérable(Tableaux (Ex: for (let note of notes))), pour les valeurs
+        for in sur les objets non itérable (for(let i in notes))

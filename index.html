@@ -10,16 +10,22 @@
 
     <script>
 
-        const age = prompt("Quel est votre age ?");
-        const nom = prompt("Quel est votre nom ?")
+    const nbre = 8;
 
-        if(age > 18){
-            console.log("Nous vous recommandons Evil Man " + nom);
-        } else if(age <= 18){
-            console.log("Nous vous recommandons Superman " + nom);
-        } else{
-            console.log("Nous vous recommandons Matrix " + nom);
+    let found;
+
+    while(nbre != found){
+
+        found = prompt("Votre chiffre") * 1;
+
+        if(nbre > found){
+            console.log("Dommage, le nombre est plus grand");
+        } else if(nbre < found){
+            console.log("Dommage, le nombre est plus petit");
         }
+
+    }
+    console.log("Felicitations");
 
     </script>
     
