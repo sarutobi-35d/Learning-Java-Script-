@@ -51,3 +51,5 @@ NB: En JavaScript, tous les types de variable sont des objets.
         * Une fonction peut etre créee dans un objet/variable
 
 
+
+6. CLASSES & PROTOTYPES: 

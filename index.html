@@ -10,11 +10,23 @@
 
     <script>
 
-    const maFonction = (param1, param2) =>{
-        console.log(param1, param2);
-    }
+        class Student{
 
-    console.log("One", "Punch");
+            constructor(nom, prenom){
+                this.nom = nom;
+                this.prenom = prenom;
+            }
+
+            setNotes(notes){
+                this.notes = notes;
+            }
+
+        }
+
+        
+        const student = new Student("hshf", "djqjsd");
+        console.log(student);
+
     </script>
     
 </body>
