@@ -10,22 +10,36 @@
 
     <script>
 
-    const nbre = 8;
-
-    let found;
-
-    while(nbre != found){
-
-        found = prompt("Votre chiffre") * 1;
-
-        if(nbre > found){
-            console.log("Dommage, le nombre est plus grand");
-        } else if(nbre < found){
-            console.log("Dommage, le nombre est plus petit");
+    /* 
+    function canDrive(age, pays){
+        if(age > 18 && pays == "FR" || age >= 21 && pays == "CMR"){
+            return true;
         }
-
+        return false;
     }
-    console.log("Felicitations");
+
+    console.log(canDrive(22, "CMR")); 
+    */
+
+    /* 
+    const canDrive = function(age, pays){
+        if(age > 18 && pays == "FR" || age >= 21 && pays == "CMR"){
+            return true;
+        }
+        return false;
+    }
+    console.log(canDrive(18, "FR"))
+    */
+
+    const a = {
+        nom: "COCO",
+        prenom: "Wish",
+        fullname: function (){
+            console.log(this.nom + " " + this.prenom);
+        }
+    }
+
+    a.fullname();
 
     </script>
     

@@ -40,3 +40,9 @@ NB: En JavaScript, tous les types de variable sont des objets.
     Permettent de repeter un morceau de code un certains nombre de fois en fonction de conditions.
         for of... Pour les objets itérable(Tableaux (Ex: for (let note of notes))), pour les valeurs
         for in sur les objets non itérable (for(let i in notes))
+
+
+5. FONCTION: est un bloc de code reutilisable. Elle a plusieurs syntaxes: avec le mot clé function(
+    elle peut etre appelée avant d'etre definie), une declaration(const)
+        * this fait appel à un objet global disponible sur la page... Coté navigateur.
+        * Une fonction peut etre créee dans un objet/variable
