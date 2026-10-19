@@ -42,7 +42,12 @@ NB: En JavaScript, tous les types de variable sont des objets.
         for in sur les objets non itérable (for(let i in notes))
 
 
-5. FONCTION: est un bloc de code reutilisable. Elle a plusieurs syntaxes: avec le mot clé function(
-    elle peut etre appelée avant d'etre definie), une declaration(const)
+5. FONCTION: est un bloc de code reutilisable. Elle a plusieurs syntaxes de déclaration: 
+    * Avec le mot clé function: elle peut etre appelée avant sa declaration, c'est le hoisting(la déclaration des fonctions 
+    sont prises en compte avant l'éxexution du code). 
+    * une declaration stockée dans une variable(const ou let): elle ne peut pas etre appellée avant sa declaration. 
+    * les fonctions fléchées.
         * this fait appel à un objet global disponible sur la page... Coté navigateur.
         * Une fonction peut etre créee dans un objet/variable
+
+
