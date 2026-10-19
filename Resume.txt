@@ -52,4 +52,5 @@ NB: En JavaScript, tous les types de variable sont des objets.
 
 
 
-6. CLASSES & PROTOTYPES: 
+6. CLASSES & PROTOTYPES: de manière générale, un prototype est une classe.
+

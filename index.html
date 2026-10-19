@@ -10,6 +10,17 @@
 
     <script>
 
+        const moyenne = (notes) => {
+            
+            let sum = 0;
+
+            for (let note of notes){
+                sum = sum + note;
+            }
+
+            return sum / notes.length;
+        }
+
         class Student{
 
             constructor(nom, prenom){
@@ -21,11 +32,16 @@
                 this.notes = notes;
             }
 
+            canPass(){
+                return moyenne(this.notes) >= 10;
+            }
+
         }
 
         
-        const student = new Student("hshf", "djqjsd");
-        console.log(student);
+        const jane = new Student("jane", "Doe")
+        jane.setNotes([10, 19,9]);
+        console.log(jane.canPass());
 
     </script>
     
