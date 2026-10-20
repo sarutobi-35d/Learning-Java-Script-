@@ -41,15 +41,37 @@
             }
         }
 
-        try {
-
-            const r = new Rectangle(-6, -5);
-
-        } catch (e) {
-            console.log(e.message);
+        class PromptError extends Error{
         }
 
-        const r = new Rectangle(-6, -5);
+
+        function promptRectangle(){
+
+            try {
+
+                const longueur = prompt("L") * 1;
+                const largeur = prompt("l") * 1;
+
+                const r = new Rectangle(longueur, largeur);
+               return r;
+            
+            } catch (e) {
+                throw new PromptError("Mauvaise valeur.");
+            }
+        }
+
+        try {
+            promptRectangle();
+        } catch (e) {
+
+            if(e instanceof PromptError){
+                console.log('PromptError');
+            }else {
+                console.log('Erreur classique');  
+            }
+        }
+            
+        
 
     </script>
     
