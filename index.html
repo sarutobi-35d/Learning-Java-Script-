@@ -10,66 +10,20 @@
 
     <script>
 
-        class Rectangle {
+    
+        /*
+        const notes = [18, 15, 17];
+        console.log(notes.at(-1)) //Affiche le dernier elt dans le tab
+        */
 
-            constructor(longueur, largeur){
+        /*
+        const notes = [18, 15, 17, 9];
+        //Filtrage... Donne les notes >= 10 avec note chaque elt du tableau.
+        const goodNotes = notes.filter((note) => note >= 10); 
+        console.log(goodNotes);
+        */
 
-                if(longueur<= 0 || largeur <=0){
-                    throw new Error("Impossible d'avoir une forme géometrique avec des dimensions négative.");
-                }
-
-                this.longueur = longueur;
-                this.largeur = largeur;
-            }
-
-            get perimeter(){
-                return (this.longueur + this.largeur) * 2;
-            }
-
-            get isValid(){
-                return this.longueur > 0 && this.largeur > 0;
-            }
-
-            isBiggerThan(shape){
-                return this.perimeter > shape.perimeter;
-            }
-        }
-
-        class Square extends Rectangle{
-            constructor(longueur){
-                super(longueur, longueur);
-            }
-        }
-
-        class PromptError extends Error{
-        }
-
-
-        function promptRectangle(){
-
-            try {
-
-                const longueur = prompt("L") * 1;
-                const largeur = prompt("l") * 1;
-
-                const r = new Rectangle(longueur, largeur);
-               return r;
-            
-            } catch (e) {
-                throw new PromptError("Mauvaise valeur.");
-            }
-        }
-
-        try {
-            promptRectangle();
-        } catch (e) {
-
-            if(e instanceof PromptError){
-                console.log('PromptError');
-            }else {
-                console.log('Erreur classique');  
-            }
-        }
+        //NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
             
         
 

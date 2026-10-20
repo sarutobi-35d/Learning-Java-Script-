@@ -58,3 +58,11 @@ NB: En JavaScript, tous les types de variable sont des objets.
 7. LES EXCEPTIONS: permet de déclancher des erreurs lorsque nous avons les données non attendues.
     *throw, try...catch
 
+
+8. FONCTIONS USUELLES: ce sont des methodes que l'on peut utilisé sur des objets, variable, tableaux etc 
+    pour effectuer des operations précises.
+    
+    * at sur les tableaux accepte les valeurs negative.
+    
+NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
+
