@@ -10,38 +10,46 @@
 
     <script>
 
-        const moyenne = (notes) => {
-            
-            let sum = 0;
+        class Rectangle {
 
-            for (let note of notes){
-                sum = sum + note;
+            constructor(longueur, largeur){
+
+                if(longueur<= 0 || largeur <=0){
+                    throw new Error("Impossible d'avoir une forme géometrique avec des dimensions négative.");
+                }
+
+                this.longueur = longueur;
+                this.largeur = largeur;
             }
 
-            return sum / notes.length;
+            get perimeter(){
+                return (this.longueur + this.largeur) * 2;
+            }
+
+            get isValid(){
+                return this.longueur > 0 && this.largeur > 0;
+            }
+
+            isBiggerThan(shape){
+                return this.perimeter > shape.perimeter;
+            }
         }
 
-        class Student{
-
-            constructor(nom, prenom){
-                this.nom = nom;
-                this.prenom = prenom;
+        class Square extends Rectangle{
+            constructor(longueur){
+                super(longueur, longueur);
             }
-
-            setNotes(notes){
-                this.notes = notes;
-            }
-
-            canPass(){
-                return moyenne(this.notes) >= 10;
-            }
-
         }
 
-        
-        const jane = new Student("jane", "Doe")
-        jane.setNotes([10, 19,9]);
-        console.log(jane.canPass());
+        try {
+
+            const r = new Rectangle(-6, -5);
+
+        } catch (e) {
+            console.log(e.message);
+        }
+
+        const r = new Rectangle(-6, -5);
 
     </script>
     

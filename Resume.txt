@@ -54,3 +54,7 @@ NB: En JavaScript, tous les types de variable sont des objets.
 
 6. CLASSES & PROTOTYPES: de manière générale, un prototype est une classe.
 
+
+7. LES EXCEPTIONS: permet de déclancher des erreurs lorsque nous avons les données non attendues.
+    *throw, try...catch
+
