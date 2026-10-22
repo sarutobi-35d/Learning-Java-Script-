@@ -84,4 +84,5 @@ NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
 
 11. PROMISE/PROMESSES
 
-    
+    En plus du système de callBacks avec then... pour le traitement asynchrone, on peut utilisé une fonction 
+    asynchrone avec la méthode await devant l'appel des fonctions pour les traitements

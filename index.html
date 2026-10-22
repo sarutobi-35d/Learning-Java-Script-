@@ -30,14 +30,30 @@
             })
         }
 
-        wait(2000)
-        .then(()=>{
-            console.log("Attendre 2s...")
-            return wait(4000)
-        })
-        .then(() =>{
-            console.log("Attendre 4s...")
-        })
+
+
+        async function main() {
+
+            try {
+                await wait(2000)
+                console.log("Attends 2s")
+
+                await wait(3000)
+                console.log("Attends 3s")
+
+                await wait(5000)
+                console.log("Attends 5s")
+                
+            } catch (e) {
+                console.log("Erreur")
+            }
+            
+        }
+
+        main();
+
+
+        
         
 
     </script>
