@@ -10,25 +10,33 @@
 
     <script>
             
-        /*
-            param1(resolve) pour les promesses tenues
-            param1(reject) pour les promesses non tenues
-        */
-
         const p = new Promise((resolve, reject) =>{
+            resolve(4)
+        });
 
-            reject(4)
-        })
+        function wait(duration){
+            return new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve(duration)
+                }, duration)
+            })
+        }
 
-        //then (savoir si la promesse est tenue ou pas)... capture des erreurs(catch)
-        p.then((n) =>{
-            console.log("Le nombre est: ", n);
+        function waitAndFaild(duration){
+            return new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    reject(duration)
+                }, duration)
+            })
+        }
+
+        wait(2000)
+        .then(()=>{
+            console.log("Attendre 2s...")
+            return wait(4000)
         })
-        .catch((e) =>{
-            console.log("Erreur", e);
-        })
-        .finally(() =>{
-            console.log("Je m'affiche toujours peu importe le résultat de la promesse.");
+        .then(() =>{
+            console.log("Attendre 4s...")
         })
         
 
