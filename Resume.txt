@@ -63,6 +63,13 @@ NB: En JavaScript, tous les types de variable sont des objets.
     pour effectuer des operations précises.
     
     * at sur les tableaux accepte les valeurs negative.
-    
+
 NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
+
+
+9. SUCRE SYNTAXIQUE: Terme utilisé pour désigner la facon d'ecrire plus simplement et rapidement du code(ce sont des 
+    éléments de syntaxes)
+
+
+10. LES TIMERS
 
