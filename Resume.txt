@@ -77,5 +77,11 @@ NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
     * Operation asynchrone: possibilité de faire une autre tache pendant qu'une autre est encours d'exécution.
 
     NB: L'un des plus grand problèmes de l'asynchrone est l'imbrication des callBacks, dans les cas ou il faut attendre un 
-    certain temps pour les autres operations; et pour palier à cela, il existe le système de Promesse. Cette facon est bloquante 
-    et se rapporte à la notion de synchrone.
+    certain temps pour les autres operations; et pour palier à cela, il existe le système de Promesse. Cette facon est 
+    bloquante et se rapporte à la notion de synchrone.
+
+
+
+11. PROMISE/PROMESSES
+
+    

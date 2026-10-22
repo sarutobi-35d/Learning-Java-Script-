@@ -10,39 +10,27 @@
 
     <script>
             
-        /* FONCTIONS SUR UN DÉCOMPTE 
-
-            function decompte(n){
-
-                console.log(n);
-                const t = setInterval(()=>{
-
-                n--;
-
-                console.log(n);
-
-                    if(n === 0){
-                        clearInterval(t);
-                    }
-                }, 1000)
-            }
-        decompte(3)
-        
+        /*
+            param1(resolve) pour les promesses tenues
+            param1(reject) pour les promesses non tenues
         */
 
-        function decompte(n){
-            console.log(n)
+        const p = new Promise((resolve, reject) =>{
 
-            if(n === 0){
-                return;
-            }
+            reject(4)
+        })
 
-            setTimeout(() =>{
-                decompte(n - 1);
-            }, 1000)
-        }
-
-        decompte(5);
+        //then (savoir si la promesse est tenue ou pas)... capture des erreurs(catch)
+        p.then((n) =>{
+            console.log("Le nombre est: ", n);
+        })
+        .catch((e) =>{
+            console.log("Erreur", e);
+        })
+        .finally(() =>{
+            console.log("Je m'affiche toujours peu importe le résultat de la promesse.");
+        })
+        
 
     </script>
     
