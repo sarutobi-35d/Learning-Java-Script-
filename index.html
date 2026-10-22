@@ -9,43 +9,40 @@
 
 
     <script>
+            
+        /* FONCTIONS SUR UN DÉCOMPTE 
 
-        /*
-            Methode setTimeout(parm1, param2) pour le traitement asynchrone
+            function decompte(n){
 
-            param1 = une fonction qui sera exécutée lorsque le delai sera ecoulé
-            param2 = delai(en ms)
+                console.log(n);
+                const t = setInterval(()=>{
 
-            setInterval() operation en intervalle de temps régulier.
-        */
-        
-        function wait(duration){
+                n--;
 
-            const t = Date.now();
+                console.log(n);
 
-            while(Date.now() - t < duration){
-
+                    if(n === 0){
+                        clearInterval(t);
+                    }
+                }, 1000)
             }
+        decompte(3)
+        
+        */
+
+        function decompte(n){
+            console.log(n)
+
+            if(n === 0){
+                return;
+            }
+
+            setTimeout(() =>{
+                decompte(n - 1);
+            }, 1000)
         }
 
-        console.log("Bonjour")
-        wait(1000)
-
-
-        setTimeout(()=> {
-
-            console.log("les gens")
-
-            setTimeout(()=> {
-            console.log("Hello")
-
-            }, 2000)
-
-        }, 1000)
-
-        console.log("Kaka")
-            
-        
+        decompte(5);
 
     </script>
     
