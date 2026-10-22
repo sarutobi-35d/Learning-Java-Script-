@@ -73,3 +73,6 @@ NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
 
 10. LES TIMERS
 
+    Operation synchrone: attendre la fin de l'éxecution d'une tache avant de faire une autre.
+    Operation asynchrone: possibilité de faire une autre tache pendant qu'une autre est encours d'exécution.
+

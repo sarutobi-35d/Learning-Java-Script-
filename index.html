@@ -10,33 +10,31 @@
 
     <script>
 
-    
         /*
-        const notes = [18, 15, 17];
-        console.log(notes.at(-1)) //Affiche le dernier elt dans le tab
+            Methode setTimeout(parm1, param2) pour le traitement asynchrone
+
+            param1 = une fonction qui sera exécutée lorsque le delai sera ecoulé
+            param2 = delai(en ms)
         */
-
-        /*
-        const notes = [18, 15, 17, 9];
-        //Filtrage... Donne les notes >= 10 avec note chaque elt du tableau.
-        const goodNotes = notes.filter((note) => note >= 10); 
-        console.log(goodNotes);
-        */
-
-        //NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
-
+        
         function wait(duration){
 
             const t = Date.now();
 
             while(Date.now() - t < duration){
-                
+
             }
         }
 
         console.log("Bonjour")
-        wait(2000)
-        console.log("les gens")
+        //wait(1000)
+
+
+        setTimeout(()=> {
+            console.log("les gens"), 1000
+        })
+
+        console.log("les genss")
             
         
 
