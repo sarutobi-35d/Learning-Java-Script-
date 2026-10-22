@@ -15,6 +15,8 @@
 
             param1 = une fonction qui sera exécutée lorsque le delai sera ecoulé
             param2 = delai(en ms)
+
+            setInterval() operation en intervalle de temps régulier.
         */
         
         function wait(duration){
@@ -27,14 +29,21 @@
         }
 
         console.log("Bonjour")
-        //wait(1000)
+        wait(1000)
 
 
         setTimeout(()=> {
-            console.log("les gens"), 1000
-        })
 
-        console.log("les genss")
+            console.log("les gens")
+
+            setTimeout(()=> {
+            console.log("Hello")
+
+            }, 2000)
+
+        }, 1000)
+
+        console.log("Kaka")
             
         
 
