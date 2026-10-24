@@ -82,7 +82,21 @@ NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
 
 
 
-11. PROMISE/PROMESSES
+11. PROMISE/PROMESSES: représenté n'importe quel code qui peux se derouler de manière asynchrone.
 
     En plus du système de callBacks avec then... pour le traitement asynchrone, on peut utilisé une fonction 
-    asynchrone avec la méthode await devant l'appel des fonctions pour les traitements
+    asynchrone avec la méthode await devant l'appel des fonctions pour les traitements.
+
+
+
+12. FETCH() Appel HTTP
+    fetch() est une fonction JS qui utilise les Promise JavaScript nativement. Il permet de contacter un serveur 
+    pour recupérer des informations(requetes HTTP coté Client/Navigateur), ou communiquer avec un serveur distant 
+    ou une API.
+
+    NB: Une reponse est considérée comme OK si son Statut est supérieur ou egal à 200 et inférieur à 400.
+
+    
+
+
+
