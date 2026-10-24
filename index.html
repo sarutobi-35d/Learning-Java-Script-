@@ -10,46 +10,27 @@
 
     <script>
 
-        /*
-            fetch(param1=URL, param2= autres methodes... Facultatif)
-        
-            
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then(r => r.json()) // Renvoi le corps de la requete en texte text(), en format JSON, utilisé .json()
-        .then(body => console.log(body)); /* Joue le rôle d'affichage/consommation des données. Il attend que la promesse 
-        du premier .then soit totalement résolue (c'est-à-dire que la conversion en JSON soit terminée). Il récupère 
-        le résultat final sous forme de variable (que tu as nommée body) et l'injecte dans console.log(body) pour 
-        l'afficher dans la console du navigateur. 
-        
+
+        /** 
+         * Permet de savoir si une personne a le droit de conduire
+         * 
+         * @param {number} age
+         * @param {string} pays
+         * @returns {boolean} 
+         
+        NB: A écrire dans un fichier .js
         */
 
-        async function fetcUsers () {
+        const canDrive = (age, pays)=>{
 
-            const r = await fetch('https://jsonplaceholder.typicode.com/posts', {
-
-                method: 'POST',
-                headers: {
-                    "Accept": "application/json", // Renvoi au format que l'on accepte
-                    "Content-Type": "application/json" //Indique à quoi ressemble les données à envoyer
-                },
-
-                body: JSON.stringify({title: "Mon premier article"})
+            if(age == 18 && pays == "FR" || age == 16 && pays == "USA"){
+                return true
+            } else{
+                return false
             }
-        )
-            
-            if(r.ok === true){
-                return r.json();
-            }
-            throw new Error("Impossible de contacter le serveur")
         }
 
-        fetcUsers().then(users => console.log(users))
-
-
-
-
-        
-        
+        console.log(canDrive(20, "USA"));
 
     </script>
     

@@ -99,4 +99,26 @@ NB: Pour plus de fonctions usuelles, rendez-vous sur la documentation officielle
     
 
 
+13. LES MODULES: permet de separé le code en plusieurs fichiers pour ainsi facilité la lecture et la maintenabilité 
+    du code JS.
 
+
+14. LES COMMENTAIRES & JSDoc: permet d'expliquer du code(rajouter du contexte, expliquer pourquoi une ligne a été ajouter) 
+    JSDoc a pour syntaxe: /**
+                            1ère ligne decrit par exemple ce que fait une fonction
+                            2ème les paramètre
+                            .
+                            .
+                            .
+                            Jusqu'à N paramètres
+                            autres lignes le type de retour
+                           */ 
+
+
+
+/*
+/
+    UTILISATION CONCRET DU JavaScript... Coté Frontend/Navigateur ou coté Backend/Serveur
+
+/
+*/
