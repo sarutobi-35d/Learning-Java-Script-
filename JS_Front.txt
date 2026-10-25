@@ -1,0 +1,12 @@
+A-) UTILISATION CONCRET DU JavaScript... Coté Frontend/Navigateur
+
+1. Manipulation du DOM
+
+
+2. LES ÉCOUTEURS D'ÉVÈNEMENTS: permettent de déclancher une action sur des elements.
+
+    Comprendre la différence entre ces méthodes:
+        * target
+        * currentTarget
+        * preventDefault(): empcche le comportement par defaut d'un elt(genre un lien qui ne redirige plus vers un site)
+        * stopPropagation()
